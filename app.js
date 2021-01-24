@@ -40,7 +40,7 @@ const atualizarTela = ()=>{
 const inserirItem=(evento) =>{
     const tecla = evento.key;
     const texto = evento.target.value;
-    if(tecla ==='Enter'){
+    if(tecla ==='Ir'){
         const banco=getBanco();
         banco.push({'tarefa': texto , 'status' : ''})
         setBanco(banco);
